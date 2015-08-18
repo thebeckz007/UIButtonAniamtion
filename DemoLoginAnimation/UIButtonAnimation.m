@@ -51,7 +51,7 @@ static CGFloat sizeOfLogin = 50;    // size of button login when zoom out
 /*!
  *  @discussion perform animation move center and blow up
  */
-- (void)animationBlowUpCenter:(void (^)(bool finish))block {
+- (void)animationLoginSuccess:(void (^)(bool finish))block {
     if (ldc == nil) {
         // initial loading indicator
         ldc = [[LoadingIndicator alloc] init];
@@ -81,7 +81,7 @@ static CGFloat sizeOfLogin = 50;    // size of button login when zoom out
 /*!
  *  @discussion roll back animation
  */
-- (void)rollbackLoginAnimation:(void (^)(bool finish))block {
+- (void)animationLoginFailed:(void (^)(bool finish))block {
     if (ldc == nil) {
         // initial loading indicator
         ldc = [[LoadingIndicator alloc] init];

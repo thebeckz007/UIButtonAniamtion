@@ -12,8 +12,8 @@
 
 - (void)animationLogin:(void (^)(bool finish))block;
 
-- (void)rollbackLoginAnimation:(void (^)(bool finish))block;
+- (void)animationLoginFailed:(void (^)(bool finish))block;
 
-- (void)animationBlowUpCenter:(void (^)(bool finish))block;
+- (void)animationLoginSuccess:(void (^)(bool finish))block;
 
 @end
