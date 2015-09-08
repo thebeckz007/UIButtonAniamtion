@@ -37,6 +37,7 @@
     [btnLogin setBackgroundColor:[UIColor colorWithRed:0.353 green:0.000 blue:0.443 alpha:1.000]];
     [btnLogin.layer setBorderWidth:2.0];
     [btnLogin.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+
     [btnLogin addTarget:self action:@selector(button_Tapped:) forControlEvents:UIControlEventTouchUpInside];
     [btnLogin setTitle:@"Log In" forState:UIControlStateNormal];
     [self.view addSubview:btnLogin];
