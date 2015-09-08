@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    LoginAnimationScaleIntoCirle = 0,                   // scale button into circle
+    LoginAnimationScaleIntoCirleAndFlyCenter,           // scale button into circle and fly to center of super view
+    LoginAnimationScaleIntoCirleAndThenFlyCenter,       // scale button into circle and then fly to center of super view
+} LoginAnimation;
+
 @interface UIButtonAnimation : UIButton
 
-- (void)animationLogin:(void (^)(bool finish))block;
+- (void)animationLogin:(LoginAnimation)animation finishBlock:(void (^)(bool finish))block;
 
-- (void)rollbackLoginAnimation:(void (^)(bool finish))block;
+- (void)animationLoginFailed:(void (^)(bool finish))block;
 
-- (void)animationBlowUpCenter:(void (^)(bool finish))block;
+- (void)animationLoginSuccess:(void (^)(bool finish))block;
 
 @end

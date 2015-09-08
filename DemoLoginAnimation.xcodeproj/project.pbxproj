@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F13F7021B9F5C7F0089BEDC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13F7001B9F5C7F0089BEDC /* DetailViewController.m */; };
+		2F13F7031B9F5C7F0089BEDC /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F13F7011B9F5C7F0089BEDC /* DetailViewController.xib */; };
 		2F8CE9451B808B400074D750 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CE9441B808B400074D750 /* main.m */; };
 		2F8CE9481B808B400074D750 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CE9471B808B400074D750 /* AppDelegate.m */; };
 		2F8CE94B1B808B400074D750 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CE94A1B808B400074D750 /* ViewController.m */; };
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F13F6FF1B9F5C7F0089BEDC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2F13F7001B9F5C7F0089BEDC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2F13F7011B9F5C7F0089BEDC /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		2F8CE93F1B808B400074D750 /* DemoLoginAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoLoginAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8CE9431B808B400074D750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F8CE9441B808B400074D750 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +71,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F13F6FE1B9F5C7F0089BEDC /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F13F6FF1B9F5C7F0089BEDC /* DetailViewController.h */,
+				2F13F7001B9F5C7F0089BEDC /* DetailViewController.m */,
+				2F13F7011B9F5C7F0089BEDC /* DetailViewController.xib */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
 		2F8CE9361B808B400074D750 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +102,7 @@
 		2F8CE9411B808B400074D750 /* DemoLoginAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				2F13F6FE1B9F5C7F0089BEDC /* DetailViewController */,
 				2F8CE9681B808BC30074D750 /* LoadingIndicator.h */,
 				2F8CE9691B808BC30074D750 /* LoadingIndicator.m */,
 				2FA859711B82570C005A01F4 /* UIButtonAnimation.h */,
@@ -212,6 +228,7 @@
 				2F8CE94E1B808B400074D750 /* Main.storyboard in Resources */,
 				2F8CE9531B808B400074D750 /* LaunchScreen.xib in Resources */,
 				2F8CE9501B808B400074D750 /* Images.xcassets in Resources */,
+				2F13F7031B9F5C7F0089BEDC /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +251,7 @@
 				2F8CE94B1B808B400074D750 /* ViewController.m in Sources */,
 				2F8CE9481B808B400074D750 /* AppDelegate.m in Sources */,
 				2F8CE9451B808B400074D750 /* main.m in Sources */,
+				2F13F7021B9F5C7F0089BEDC /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
